@@ -4,13 +4,9 @@
   <p align="center"> Estou em transição de carreira, sou  apaixonada por tecnologia, inovação e automatização de processos.</h2>
 </div>
 
-
-<div align="center">
-  <a href="https://www.instagram.com/samicantao/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/samiracantao/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-  <a href="https://api.whatsapp.com/send?phone=5591980628052" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a> 
-  <a href="mailto:samiracantao@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-</div>
-
+##  📱Contato
+[ <img src = "https://img.icons8.com/glyph-neue/344/github.png" width="50" height="50"> ](https://github.com/SamiCantao)
+[ <img src = "https://img.icons8.com/color/344/linkedin-circled--v1.png" width="50" height="50"> ](https://www.linkedin.com/in/samiracantão/)
+[ <img src = "https://img.icons8.com/color/344/whatsapp--v1.png" width="50" height="50"> ](https://api.whatsapp.com/enviar?telefone=5591980628052)
 
  
