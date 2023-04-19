@@ -1,7 +1,7 @@
 <div>
   <h1 align="center">Hello World! Tudo bem? ✌️😃️</h1>
-  <h2 align="center">Meu nome é <a href="https://www.linkedin.com/in/samiracantao/"><i>Samira Cantão</i></a> e sou estudante Full Stack na <a href="https://www.alura.com.br//"><i>Alura</i></a>.🎓💻🎯
-  <p align="center"> Estou em transição de carreira, sou  apaixonada por tecnologia, inovação e automatização de processos.</h2>
+  <h2 align="center">Meu nome é <a href="https://www.linkedin.com/in/samiracantao/"><i>Samira Cantão</i></a> e sou estudante de Analise e Desenvolvimento de Sistemas.🎓💻🎯
+  <p align="center"> Sou  apaixonada por tecnologia, inovação e automatização de processos.</h2>
 </div>
 
 ##  📱Contato
