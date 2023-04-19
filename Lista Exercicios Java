@@ -190,3 +190,160 @@ public class AntecessorSucessor {
 
 <<========================================= QUESTÃO 07 =========================================>>
 
+*// Escreva um programa que, com base em uma temperatura em graus celsius, a converta e exiba em Kelvin (K), Réaumur (Re), Rankine (Ra) e Fahrenheit (F), 
+seguindo as fórmulas: F = C * 1.8 + 32; K = C + 273.15; Re = C * 0.8; Ra = C * 1.8 + 32 + 459.67
+
+*/
+import java.util.Scanner;
+
+public class ConversorTemperatura {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite a temperatura em graus Celsius: ");
+        double celsius = scanner.nextDouble();
+        
+        double kelvin = celsius + 273.15;
+        double reaumur = celsius * 0.8;
+        double rankine = celsius * 1.8 + 32 + 459.67;
+        double fahrenheit = celsius * 1.8 + 32;
+        
+        System.out.printf("Temperatura em Kelvin: %.2f K%n", kelvin);
+        System.out.printf("Temperatura em Réaumur: %.2f °Ré%n", reaumur);
+        System.out.printf("Temperatura em Rankine: %.2f °Ra%n", rankine);
+        System.out.printf("Temperatura em Fahrenheit: %.2f °F%n", fahrenheit);
+
+        scanner.close();
+    }
+
+}
+
+
+<<========================================= QUESTÃO 08 =========================================>>
+
+/** Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino) de 10 pessoas. Fazer um algoritmo que calcule e escreva:
+a. a maior e a menor altura do grupo;
+b. média de altura dos homens;
+c. o número de mulheres.
+*/
+
+import java.util.Scanner;
+
+public class DadosPessoais {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        int numMulheres = 0;
+        double maiorAltura = 0.0;
+        double menorAltura = Double.MAX_VALUE;
+        double somaAlturasHomens = 0.0;
+        int numHomens = 0;
+        
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("Pessoa %d:%n", i);
+            
+            System.out.print("Altura (em metros): ");
+            double altura = scanner.nextDouble();
+            
+            System.out.print("Sexo (M/F): ");
+            String sexo = scanner.next();
+            
+            if (sexo.equalsIgnoreCase("M")) {
+                somaAlturasHomens += altura;
+                numHomens++;
+            } else {
+                numMulheres++;
+            }
+            
+            if (altura > maiorAltura) {
+                maiorAltura = altura;
+            }
+            if (altura < menorAltura) {
+                menorAltura = altura;
+            }
+        }
+        
+        double mediaAlturaHomens = somaAlturasHomens / numHomens;
+        
+        System.out.printf("Maior altura: %.2f m%n", maiorAltura);
+        System.out.printf("Menor altura: %.2f m%n", menorAltura);
+        System.out.printf("Média de altura dos homens: %.2f m%n", mediaAlturaHomens);
+        System.out.printf("Número de mulheres: %d%n", numMulheres);
+        
+        scanner.close();
+    }
+
+}
+
+
+
+<<========================================= QUESTÃO 09 =========================================>>
+
+/** Escreva um programa Java que leia os três lados de um triângulo e verifique se tais valores realmente formam um triângulo. 
+Se o teste for satisfatório, informe se o triângulo é isósceles (dois lados iguais e um diferente), escaleno (todos os lados diferentes) 
+ou equilátero (todos os lados iguais). 
+*/
+
+import java.util.Scanner;
+
+public class Triangulo {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite o lado 1 do triângulo: ");
+        double lado1 = input.nextDouble();
+
+        System.out.print("Digite o lado 2 do triângulo: ");
+        double lado2 = input.nextDouble();
+
+        System.out.print("Digite o lado 3 do triângulo: ");
+        double lado3 = input.nextDouble();
+
+        if ((lado1 + lado2 > lado3) && (lado1 + lado3 > lado2) && (lado2 + lado3 > lado1)) {
+            System.out.print("Os valores formam um triângulo ");
+
+            if ((lado1 == lado2) && (lado2 == lado3)) {
+                System.out.println("equilátero.");
+            } else if ((lado1 == lado2) || (lado1 == lado3) || (lado2 == lado3)) {
+                System.out.println("isósceles.");
+            } else {
+                System.out.println("escaleno.");
+            }
+        } else {
+            System.out.println("Os valores não formam um triângulo.");
+        }
+
+        input.close();
+    }
+}
+
+<<========================================= QUESTÃO 10 =========================================>>
+
+*// Uma imobiliária vende apenas terrenos retangulares. 
+Faça um programa em java para ler as dimensões de um terreno e depois exibir a área do terreno. (lado x altura)
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite a largura do terreno: ");
+        double largura = sc.nextDouble();
+        
+        System.out.print("Digite a altura do terreno: ");
+        double altura = sc.nextDouble();
+        
+        double area = largura * altura;
+        
+        System.out.printf("A área do terreno é: %.2f m²", area);
+        
+        sc.close();
+    }
+}
+
+
